@@ -1,0 +1,33 @@
+.post{
+    border: 1px solid #bababa;
+    padding: 5px;
+    height: 400px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all .2s ease-out;
+
+    h2, p{
+        padding: 0px;
+        margin: 0px;
+    }
+    .date{
+        display: flex;
+        align-items: flex-end;
+        height: auto;
+        justify-content: space-between;
+        font-style: italic;
+    }
+
+    &:hover{
+        scale: 1.1;
+        transition: all .2s ease-out;
+    }
+}
+
+.selected{
+    border: 2px solid red;
+}
