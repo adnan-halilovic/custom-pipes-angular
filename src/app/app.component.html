@@ -1,7 +1,7 @@
 <div class="container">
   <div class="heading">
     <h1>WebDev News</h1>
-    <span>Current time: {{currentDate}}</span>
+    <span>Current time: {{currentDate | customDateFormat : 'timeOnly'}}</span>
   </div>
 
   <div class="search-bar"><input type="text" [(ngModel)]="searchTerm" placeholder="Search for posts..." /></div>
