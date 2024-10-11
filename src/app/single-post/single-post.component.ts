@@ -1,9 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { CustomDateFormatPipe } from '../shared/pipes/custom-date-format.pipe';
+import { TimeAgoPipe } from '../shared/pipes/time-ago.pipe';
 
 @Component({
   selector: 'app-single-post',
   standalone: true,
-  imports: [],
+  imports: [TimeAgoPipe, CustomDateFormatPipe],
   templateUrl: './single-post.component.html',
   styleUrl: './single-post.component.scss',
 })
