@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CustomDateFormatPipe } from './shared/pipes/custom-date-format.pipe';
+import { FilterArrayPipe } from './shared/pipes/filter-array.pipe';
 import { TextTruncatePipe } from './shared/pipes/text-truncate.pipe';
 import { SinglePostComponent } from './single-post/single-post.component';
 
@@ -13,7 +14,8 @@ import { SinglePostComponent } from './single-post/single-post.component';
     FormsModule,
     SinglePostComponent,
     TextTruncatePipe,
-    CustomDateFormatPipe
+    CustomDateFormatPipe,
+    FilterArrayPipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

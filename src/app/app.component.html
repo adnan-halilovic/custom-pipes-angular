@@ -6,7 +6,7 @@
 
   <div class="search-bar"><input type="text" [(ngModel)]="searchTerm" placeholder="Search for posts..." /></div>
   <div class="posts-container">
-    @for (post of posts; track $index) {
+    @for (post of posts | filterArray : searchTerm : 'title'; track $index) {
       <app-single-post
       class="post" 
       [title]='post.title' 
