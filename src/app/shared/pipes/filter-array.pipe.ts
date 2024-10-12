@@ -12,7 +12,7 @@ export class FilterArrayPipe implements PipeTransform {
 
     if (objectKey) {
       return items.filter((item) =>
-        item[objectKey].toLowerCase().includes(searchText.toLocaleLowerCase())
+        item[objectKey].toLowerCase().includes(searchText.toLowerCase())
       );
     } else {
       return items.filter((item) => item.toLowercase().includes(searchText.toLowerCase()));
